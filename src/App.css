@@ -147,10 +147,13 @@
   .app {
     @apply bg-(--Neutral-color-900) min-h-screen w-full px-4 sm:px-8 md:px-16 overflow-hidden;
   }
+  button {
+    cursor: pointer;
+  }
 }
 
 header .search-btn {
-  @apply bg-(--Blue-color-500) hover:border-2 border-(--Neutral-color-900) hover:outline-1 hover:outline-solid outline-(--Blue-color-500);
+  @apply bg-(--Blue-color-500) hover:border-2 border-(--Neutral-color-900) hover:outline-1 hover:outline-solid outline-(--Blue-color-500) text-white;
 }
 
 header .search {
@@ -161,8 +164,8 @@ header .command {
   @apply hover:border-2 border-(--Neutral-color-900) outline-none;
 }
 
-nav div > button:hover {
-  @apply border-2 border-(--Neutral-color-900) outline-1 outline-solid outline-(--Neutral-color-0);
+nav div > button {
+  @apply hover:border-2 outline-none border-(--Neutral-color-900) hover:outline-1 hover:outline-solid hover:outline-(--Neutral-color-0) bg-background text-white;
 }
 
 section .current-weather {

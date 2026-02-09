@@ -33,7 +33,7 @@ const HourlyForecast = ({ weekDay, setWeekDay, weekDays, tempDay, imageWeather }
         <div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button className='bg-white/10 hover:bg-white/10'>{ day } <ChevronDown /></Button>
+              <Button className='bg-white/10 hover:bg-white/10 text-white'>{ day } <ChevronDown /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuGroup>
@@ -50,7 +50,7 @@ const HourlyForecast = ({ weekDay, setWeekDay, weekDays, tempDay, imageWeather }
         </div>
       </div>
       <div className="mt-2">
-        <ScrollArea className='w-full h-115'>
+        <ScrollArea className='w-full h-117'>
           {Array.from({ length: 24 }).map((_, i: number) => (
             <div key={i} className="flex justify-between px-2 py-3 border my-2 rounded-md bg-white/5 hover:bg-white/5 min-h-12">
               <span className='font-bold flex items-center gap-1.5'>

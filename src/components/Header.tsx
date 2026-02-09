@@ -75,14 +75,14 @@ const Header = ({setCity, setCountry, city}: types) => {
           <h2 className="text-3xl font-extrabold text-center">How's the sky looking today?</h2>
 
           <div className="flex flex-col sm:flex-row sm:items-start justify-center gap-4">
-            <Command className="max-w-md lg:w-sm rounded-lg border">
+            <Command className="max-w-md lg:w-sm rounded-lg border relative overflow-visible">
               <CommandInput placeholder="Type a command or search..." ref={inputRef} value={search} onValueChange={setSearch} />
               {isFound ? (
                 <>
                   <h2 className="mt-2 text-2xl font-extrabold text-center">No search result found!</h2>
                 </>
               ) : (
-                <CommandList>
+                <CommandList className="absolute w-full top-10 bg-background rounded-md">
                   {isFocus && (
                     <>
                       {allCountries.map((country) => (
@@ -94,9 +94,6 @@ const Header = ({setCity, setCountry, city}: types) => {
                           </CommandItem>
                         ))
                       }
-                          
-                      <button className="absolute bg-transparent z-20 top-0 right-2 cursor-pointer h-0" onClick={() => setIsFocus(false)}
-                      >x</button>
                     </>
                     )
                     }
