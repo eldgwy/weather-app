@@ -1,74 +1,77 @@
-# React + TypeScript + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built with React and TypeScript that provides current weather conditions, hourly forecasts, and a 7-day forecast using real weather data.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://weather-app-rho-ten-14.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌤️ View current weather conditions
+- 📅 7-day weather forecast
+- 🕐 Hourly weather forecast
+- 🔎 Search for weather by city
+- 📍 Automatic location detection
+- 🌡️ Support for different temperature units
+- 💨 Wind and precipitation information
+- 🌙 Light and dark themes
+- 📱 Responsive design
+- ⚡ Loading and error states
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **React Hook Form**
+- **Zod**
+- **Axios**
+- **React Router**
+- **Open-Meteo API**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Preview
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Weather App](./public/preview.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# weather-app
+## 🧠 What I Learned
+
+This project gave me more experience working with external APIs and handling real-world data in a React application.
+
+Some of the main things I practiced:
+
+- Fetching and displaying data from an external API
+- Handling asynchronous operations
+- Managing loading and error states
+- Working with hourly and daily forecast data
+- Converting and displaying different units
+- Using geolocation to provide weather based on the user's location
+- Validating user input with React Hook Form and Zod
+- Breaking the UI into reusable components
+- Building a responsive interface
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── CurrentWeather/
+│   ├── DailyForecast/
+│   ├── HourlyForecast/
+│   ├── Header/
+│   └── Navbar/
+│
+├── lib/
+├── pages/
+├── App.tsx
+└── main.tsx
