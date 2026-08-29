@@ -37,7 +37,7 @@ A responsive weather application built with React and TypeScript that provides c
 
 ## 📸 Preview
 
-![Weather App](./public/preview.png)
+![Weather App](./public/preview.jpg)
 
 ---
 
