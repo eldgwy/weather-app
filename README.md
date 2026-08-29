@@ -15,7 +15,6 @@ A responsive weather application built with React and TypeScript that provides c
 - 📍 Automatic location detection
 - 🌡️ Support for different temperature units
 - 💨 Wind and precipitation information
-- 🌙 Light and dark themes
 - 📱 Responsive design
 - ⚡ Loading and error states
 
@@ -27,8 +26,6 @@ A responsive weather application built with React and TypeScript that provides c
 - **TypeScript**
 - **Vite**
 - **Tailwind CSS**
-- **React Hook Form**
-- **Zod**
 - **Axios**
 - **React Router**
 - **Open-Meteo API**
@@ -53,7 +50,6 @@ Some of the main things I practiced:
 - Working with hourly and daily forecast data
 - Converting and displaying different units
 - Using geolocation to provide weather based on the user's location
-- Validating user input with React Hook Form and Zod
 - Breaking the UI into reusable components
 - Building a responsive interface
 
